@@ -1,0 +1,10 @@
+@import '../variables';
+
+@each $name, $color in $colors {
+  .table-#{$name} {
+    background-color: $color;
+    th, td {
+      border-color: darken($color, 10%);
+    }
+  }
+}
